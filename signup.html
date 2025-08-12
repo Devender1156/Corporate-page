@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Corporate Signup</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="auth-page">
+    <div class="card">
+      <header class="card-header">
+        <h1>Mankind Anerica LLC</h1>
+        <p>Create an account</p>
+      </header>
+
+      <form id="signupForm" novalidate>
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" placeholder="Your full name" required>
+        <div class="error" id="nameError"></div>
+
+        <label for="signupEmail">Work Email</label>
+        <input type="email" id="signupEmail" placeholder="name@company.com" required>
+        <div class="error" id="emailError"></div>
+
+        <label for="signupPassword">Password</label>
+        <input type="password" id="signupPassword" placeholder="Create a password" required>
+        <div id="passwordStrength" class="pw-strength" aria-live="polite">Password strength: —</div>
+        <div class="error" id="passwordError"></div>
+
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" placeholder="Re-enter password" required>
+        <div class="error" id="confirmPasswordError"></div>
+
+        <button type="submit" class="btn">Create account</button>
+
+        <p class="muted">Already have an account? <a href="login.html">Sign in</a></p>
+
+        <div class="success" id="signupSuccess" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+
+  <script src="signup.js"></script>
+</body>
+</html>

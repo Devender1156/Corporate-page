@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Corporate Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="auth-page">
+    <div class="card">
+      <header class="card-header">
+        <h1>Mankind America LLC</h1>
+        <p>Corporate Login</p>
+      </header>
+
+      <form id="loginForm" novalidate>
+        <label for="loginEmail">Work Email</label>
+        <input type="email" id="loginEmail" placeholder="name@company.com" required>
+        <div class="error" id="loginEmailError"></div>
+
+        <label for="loginPassword">Password</label>
+        <input type="password" id="loginPassword" placeholder="Your password" required>
+        <div class="error" id="loginPasswordError"></div>
+
+        <button type="submit" class="btn">Sign in</button>
+
+        <p class="muted">Don't have an account? <a href="signup.html">Create one</a></p>
+
+        <div class="error" id="loginError" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
